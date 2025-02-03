@@ -1,0 +1,44 @@
+/* Hero Section */
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)), url('../../assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px; /* Adds padding for better responsiveness */
+}
+
+.hero-text {
+    max-width: 800px; /* Limits text width for better readability */
+    animation: fadeIn 1.5s ease-in-out; /* Adds a subtle fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-text h1 {
+    font-size: 3.5rem; /* Larger heading for impact */
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}

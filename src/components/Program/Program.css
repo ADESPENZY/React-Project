@@ -1,0 +1,80 @@
+/* Container for the programs */
+.programs {
+    display: flex;
+    justify-content: space-around; /* Distributes space evenly between items */
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    gap: 20px; /* Adds space between items */
+    padding: 20px;
+    width: 90%;
+    margin:  50px auto;
+}
+
+/* Individual program container */
+.program {
+    flex: 1 1 300px; /* Flexible sizing with a minimum width of 300px */
+    max-width: 100%; /* Ensures it doesn't overflow its container */
+    overflow: hidden; /* Keeps the image contained */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.program:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Styling for the images */
+.program img {
+    width: 100%; /* Ensures the image fills the container */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes extra space below the image */
+    border-radius: 10px; /* Matches the container's rounded corners */
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+    position: relative;
+}
+
+.program:hover img {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+
+/* Caption styling */
+.caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 15, 153, 0.3); /* Semi-transparent overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+    border-radius: 10px; /* Match the container's rounded corners */
+}
+
+.program:hover .caption {
+    opacity: 1; /* Show on hover */
+}
+
+/* Icon styling */
+.caption img {
+    width: 60px; /* Adjust icon size */
+    height: 50px;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3)); /* Adds a subtle shadow */
+}
+
+/* Text styling */
+.caption p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow for better readability */
+}

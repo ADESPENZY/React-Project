@@ -1,0 +1,53 @@
+.campus {
+    margin: 80px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    width: 100%; 
+}
+
+.gallery img {
+    width: 23%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+button {
+  background-color: #ff6f61; 
+  color: #fff;
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  gap: 10px; 
+}
+
+button:hover {
+  background-color: #e65a50;
+}
+
+button img {
+  width: 16px; /* Set a fixed width for the image */
+  height: 16px; /* Set a fixed height for the image */
+  filter: brightness(0) invert(1); /* Make the image white */
+}

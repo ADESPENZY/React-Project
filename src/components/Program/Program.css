@@ -6,7 +6,7 @@
     flex-wrap: wrap; /* Allows wrapping for smaller screens */
     gap: 20px; /* Adds space between items */
     padding: 20px;
-    width: 90%;
+    width: 100%;
     margin:  50px auto;
 }
 
@@ -28,7 +28,7 @@
 /* Styling for the images */
 .program img {
     width: 100%; /* Ensures the image fills the container */
-    height: auto; /* Maintains aspect ratio */
+    height: 300px; /* Maintains aspect ratio */
     display: block; /* Removes extra space below the image */
     border-radius: 10px; /* Matches the container's rounded corners */
     transition: transform 0.3s ease; /* Smooth zoom effect on hover */
@@ -38,8 +38,6 @@
 .program:hover img {
     transform: scale(1.1); /* Slight zoom on hover */
 }
-
-
 
 /* Caption styling */
 .caption {
@@ -55,19 +53,12 @@
     align-items: center;
     opacity: 0; /* Initially hidden */
     transition: opacity 0.3s ease;
-    border-radius: 10px; /* Match the container's rounded corners */
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .program:hover .caption {
     opacity: 1; /* Show on hover */
-}
-
-/* Icon styling */
-.caption img {
-    width: 60px; /* Adjust icon size */
-    height: 50px;
-    margin-bottom: 10px;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3)); /* Adds a subtle shadow */
 }
 
 /* Text styling */
@@ -77,4 +68,12 @@
     color: #fff;
     margin: 0;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow for better readability */
+}
+
+.caption i {
+    font-size: 100px;
+    color: #fff;
+    margin-bottom: 15px; 
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3)); 
+    transition: transform 0.3s ease; 
 }

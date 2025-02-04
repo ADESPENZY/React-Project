@@ -1,0 +1,83 @@
+.testimonial {
+    margin: 80px auto;
+    padding: 0 80px;
+    position: relative;
+}
+
+.next-btn, .back-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 15px;
+    width: 50px;
+    cursor: pointer;
+    background: #ff6f61;
+    border-radius: 50%;
+}
+
+.back-btn {
+    right: auto;
+    left: 0;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    width: 200%;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.slide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.user-info img {
+    width: 80px; /* Adjust the size of the image */
+    height: 80px; /* Adjust the size of the image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image fits well */
+    margin-right: 15px; /* Add spacing between the image and text */
+    border: 4px solid #ff6f61;
+    
+}
+
+.user-info h3 {
+    font-size: 20px;
+    margin: 0;
+    color: #ff6f61;
+}
+
+.user-info span {
+    font-size: 14px;
+    color: #777;
+}
+
+.slide p {
+    font-size: 16px;
+    color: #676767;
+    max-width: 600px; /* Limit the width of the paragraph */
+    line-height: 1.6; /* Improve readability */
+}
+
+.slider ul li{
+    list-style: none;
+    width: 50%;
+    padding: 20px;
+}

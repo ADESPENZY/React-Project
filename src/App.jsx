@@ -9,9 +9,12 @@ import Campus from './components/Campus/Campus'
 import Testimonial from './components/Testimonial/Testimonial'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import VideoPlayer from './components/videoPlayer/videoPlayer'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [play, setPlay] = useState(false);
+
+
 
   return (
     <div>
@@ -20,7 +23,7 @@ function App() {
       <div className='container'>
           <Title subTitle='Our PROGRAMS' title='What We Offer' />
           <Program/>
-          <About />
+          <About setPlay={setPlay}/>
           <Title subTitle='Gallery' title='Campus Photos' />
           <Campus/>
           <Title subTitle='TESTIMONIALS' title='What Our Student Says' />
@@ -28,8 +31,8 @@ function App() {
           <Title subTitle='Contact Us' title='Get In Touch' />
           <Contact/>
           <Footer/>
-
       </div>
+      <VideoPlayer play={play} setPlay={setPlay} />
     </div>
   )
 }
